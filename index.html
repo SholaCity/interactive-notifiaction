@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Plus+Jakarta+Sans">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <Notify></Notify>
+
+  <section id="notification">
+    <div class="notification">
+      <div class="main-head">
+        <h3 class="text"><strong>Notifications
+          </strong><span class="notification-counter">1</span>
+        </h3>
+        <p onclick="clearNotifications();">Mark all as read</p>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong>Mark Webber</strong> reacted to your recent post <strong>first tournament
+                  today!</strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">1m ago</p>
+          </div>
+        </header>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong>Angela</strong> Gray followed you <strong></strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">5m ago</p>
+          </div>
+        </header>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong> Jacob Thompson</strong> has joined your group <strong>Chess Club</strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">1day ago</p>
+          </div>
+        </header>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong>
+                  Rizky Hasanuddin </strong> sent you a private message<strong></strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">5days ago</p>
+          </div>
+        </header>
+
+        <p class="message">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </p>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong>
+                  Kimberly Smith </strong> commented on your picture<strong></strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">1week ago</p>
+          </div>
+        </header>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong>
+                  Nathan Peterson </strong> reacted to your recent post 5 end-game strategies to increase your win rate
+                <strong></strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">2weeks ago</p>
+          </div>
+        </header>
+      </div>
+      <div class="notification-content unread">
+        <header>
+          <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim">
+          <div class="text">
+            <div class="notification-head">
+              <p class="title"><strong>
+                  Anna Kim </strong> left the group
+
+                <strong> Chess Club</strong>
+              <div class="unopened"></div>
+            </div>
+            <p class="time">2weeks ago</p>
+          </div>
+        </header>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://tiny-klepon-e31540.netlify.app">Nwoko Victor</a>.
+  </div>
+  <script src="./App.js"></script>
+</body>
+
+</html>
